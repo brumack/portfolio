@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Righteous|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+  <div class="container-fluid">
+    <nav class="navbar fixed-top navbar-light">
+      <a class="navbar-brand scrollTo" href="#top"><strong>BR</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link scrollTo" href="#projects">Projects <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollTo" href="#bio">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./docs/resume.txt" target='_blank' tabindex="-1" aria-disabled="true">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/bradleyrumack/" target='_blank' tabindex="-1"
+              aria-disabled="true">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main container-fluid">
+
+      <section class="jumbotron">
+        <div class="row align-items-center headline">
+          <div class="col-12">
+            <h1>Bradley Rumack</h1>
+            <p>Full-Stack Developer, Los Angeles CA</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="stack container">
+        <div class="row">
+          <div class="col">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-node"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-npm"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="col">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-git"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-wordpress"></i>
+          </div>
+        </div>
+      </section>
+
+      <section id='projects'>
+        <div class="projects d-none d-md-block">
+          <div class='card-container container-fluid d-flex align-items-center' onclick='shuffle()'>
+            <div class="row card-row d-flex align-items-center justify-content-center">
+
+              <div class='card project-card contract' onClick='expand(this)'>
+                <h1>Cryptocurrency Trading Bot</h1>
+                <h6 class='description'>Script written in Node.js which continuously analyizes price
+                  action looking for specific conditions using statistical analysis.
+                  Formula was derived over many months of testing and paper trading.
+                </h6>
+                <p>
+                  <a target='_blank' href='https://github.com/brumack/netBot'>
+                    <i class="fab fa-github fa-2" aria-hidden="true"></i>
+                  </a>
+                  <br>
+                  Node.js, Binance API
+                </p>
+              </div>
+
+              <div class='card project-card contract' onClick='expand(this)'>
+                <h1>Wavez</h1>
+                <h6 class='description hidden'>
+                  Restful CRUD application revolving around crowd-sorced beach
+                  info and reviews, particularly surfing conditions.
+                </h6>
+                <p>
+                  <a target='_blank' href='https://github.com/brumack/wavez'>
+                    <i class="fab fa-github fa-2" aria-hidden="true"></i>
+                  </a>
+                  <a target='_blank' href='https://wavezapp.herokuapp.com/'>
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                  </a>
+                  <br>
+                  HTML, CSS, Javascript, Bootstrap 4, Node, EJS, REST, 3rd-party APIs
+                </p>
+              </div>
+
+              <div class='card project-card contract' onClick='expand(this)'>
+                <h1>Real Estate Website</h1>
+                <h6 class='description hidden'>
+                  Example website built for a real estate agent.
+                </h6>
+                <p>
+                  <a target='_blank' href='https://github.com/brumack/rickrumack_com'>
+                    <i class="fab fa-github fa-2" aria-hidden="true"></i>
+                  </a>
+                  <a target='_blank' href='https://rumackrealestate.herokuapp.com/'>
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                  </a>
+                  <br>
+                  HTML, CSS, Javascript, jQuery, Materialize
+                </p>
+              </div>
+
+              <div class='card project-card contract' onClick='expand(this)'>
+                <h1>Simon Recreation</h1>
+                <h6 class='description hidden'>
+                  Recreation of the game Simon from the 90's
+                </h6>
+                <p>
+                  <a target='_blank' href='https://github.com/brumack/Simon'>
+                    <i class="fab fa-github fa-2" aria-hidden="true"></i>
+                  </a>
+                  <a target='_blank' href='https://brumack.github.io/Simon/'>
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                  </a>
+                  <br>
+                  HTML, CSS, Javascript, jQuery
+                </p>
+              </div>
+
+              <!--<div class='card project-card contract' onClick='expand(this)'>
+                <h1>5 Card Title</h1>
+                <p>www.bradrumack.com</p>
+              </div>
+
+              <div class='card project-card contract' onClick='expand(this)'>
+                <h1>6 Card Title</h1>
+                <p>www.bradrumack.com</p>
+              </div> -->
+              <div class="row projects-title-row align-items-end justify-content-center">
+                <div class="col-12">
+                  <h1>Projects</h1>
+                  <p>
+                    Click on a card to view project details and navigate to a live version and/or project code
+                    <br>
+                    Click on the container to reshuffle the cards.
+                    <br>
+                    More projects to come!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-mobile d-md-none">
+          <div class='container'>
+            <h1>Projects</h1>
+            <div class="row">
+              <div class='col-sm-6 col-xs-12'>
+                <div class='card project-card-mobile contract'>
+                  <h1>Cryptocurrency Trading Bot</h1>
+                  <h6 class='description'>Script written in Node.js which continuously analyizes price
+                    action looking for specific conditions using statistical analysis.
+                    Formula was derived over many months of testing and paper trading.
+                  </h6>
+                  <p>
+                    <a target='_blank' href='https://github.com/brumack/netBot'>
+                      <i class="fab fa-github fa-2" aria-hidden="true"></i>
+                    </a>
+                    <br>
+                    Node.js, Binance API
+                  </p>
+                </div>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='card project-card-mobile contract'>
+                  <h1>Wavez</h1>
+                  <h6 class='
+                  description hidden'>
+                    Restful CRUD application revolving around crowd-sorced beach
+                    info and reviews, particularly surfing conditions.
+                  </h6>
+                  <p>
+                    <a target='_blank' href='https://github.com/brumack/wavez'>
+                      <i class="fab fa-github fa-2" aria-hidden="true"></i>
+                    </a>
+                    <a target='_blank' href='https://wavezapp.herokuapp.com/'>
+                      <i class="fa fa-laptop" aria-hidden="true"></i>
+                    </a>
+                    <br>
+                    HTML, CSS, Javascript, Bootstrap 4, Node, EJS, REST, 3rd-party APIs
+                  </p>
+                </div>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='card project-card-mobile contract'>
+                  <h1>Real Estate Website</h1>
+                  <h6 class='description hidden'>
+                    Example website built for a real estate agent.
+                  </h6>
+                  <p>
+                    <a target='_blank' href='https://github.com/brumack/rickrumack_com'>
+                      <i class="fab fa-github fa-2" aria-hidden="true"></i>
+                    </a>
+                    <a target='_blank' href='https://rumackrealestate.herokuapp.com/'>
+                      <i class="fa fa-laptop" aria-hidden="true"></i>
+                    </a>
+                    <br>
+                    HTML, CSS, Javascript, jQuery, Materialize
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- add linkedin and github icons to bio card, right-justified 
+            add icons for experience and edication to each section, right-justified -->
+      <section id='bio' class="bio">
+        <div class='row d-flex justify-content-center'>
+          <div class='col-md-8 col-xs-12'>
+            <div class='card'>
+              <div class='card-body'>
+                <h3 class="card-title">Bio</h3>
+                <hr>
+                <p class="card-text">I'm
+                  a <em>self-taught</em> full-stack developer, specializing in <strong>Javascript</strong>. Originally
+                  from Phoenix, AZ, I've
+                  called California home for a total of 4 years; Long Beach for 2 and a half years beginning in
+                  2010, and now Pasadena as of October of 2017. While I enjoy all aspects of development, I highly
+                  enjoy working on the back-end, and creating and consuming APIs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row d-flex justify-content-center'>
+          <div class="col-md-5 col-xs-12">
+            <div class="card">
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h4>Experience</h4>
+                    <hr>
+                    <h5>Valid Strategy</h5>
+                    <!-- code font awesome icon -->
+                    <p>June 2018 - October 2018</p>
+                    <!-- bitcoin font awesome icon -->
+                    <p>Valid Strategy was a local fintech startup. With Valid Strategy, I was the sole developer on a
+                      project with the goal of automatically
+                      trading financial assets via online exchanges. Strategic news sources were scraped and text
+                      analyzed against derived key words and phrases to make trading decisions. When optimal
+                      conditions were met, trades were automatically executed on relevant exchanges and
+                      notifications sent via SMS.
+                    </p>
+                    <hr>
+                    <div>
+                      <img src='./images/icons/weebly.png'>
+                      <h5>Weebly</h5>
+                      <!-- wrench font awesome icon -->
+                      <p>October 2015 - September 2017</p>
+
+                    </div>
+
+                    <p>Weebly is a build-your-own-website SaaS company. While with Weebly, I began as a Customer
+                      Success Advocate on the Chat Team. Over time, I grew my
+                      roll as a mentor to new employees, and was eventually placed on a newly formed team as a
+                      founding member, tasked with analyzing support ticket traffic and deriving new systems and
+                      strategies to optimize ticket response quality and time.
+                    </p>
+                  </li>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-xs-12">
+            <div class="card">
+              <div class='card-body'>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h4>Education</h4>
+                    <hr>
+                    <img src='./images/icons/fcc.png' id="fcc">
+                    <h5>Free Code Camp</h5>
+                    <!-- free code camp font awesome icon -->
+                    <p>2017<br>Front-end Developer Certification</p>
+                    <p>
+                      The FCC curriculum consisted of extensive education in HTML,
+                      CSS, Bootstrap 3, Javascript, jQuery, and scripting algorithm
+                      challenges. The program also involved competing several projects,
+                      some of which you'll find available in this portfolio.
+                    </p>
+                    <hr>
+                    <img src='./images/icons/udemy.webp'>
+                    <h5>Udemy</h5>
+                    <!-- laptop font awesome icon -->
+                    <p>2017 - Current<br>Multiple Courses</p>
+                    <p>Udemy is my main source of education as of late. I've recently
+                      completed courses in mySQL and a full-stack Javascript course
+                      that included MongoDB. My Waves project was conceived after
+                      completeing this course. I'm also currently studying Python and
+                      React with Redux.
+                    </p>
+                    <hr>
+                    <img src='./images/icons/csulb.jpeg'>
+                    <h5>CSU, Long Beach</h5>
+                    <!-- univeristy font awesome icon -->
+                    <p>August 2010 - March 2013<br>Finance Major<br>Deans List</p>
+                    <p>My initial move to California was to attend classes at CSULB, where I studied finance.
+                      My experience was excellent. An unfortunate health condition sprung itself, so I was
+                      forced to withdraw in the Spring of 2013, and when finances ran dry, I had to
+                      return to Arizona. I had the goal of returning to California ever since, and I finally
+                      made it.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </section>
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

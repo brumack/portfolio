@@ -1,0 +1,370 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  user-select: none;
+  font-family: Lato;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+nav {
+  padding: 0;
+}
+
+.navbar.navbar-light {
+  background-color: rgba(0, 0, 0, 0)
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #000;
+  border-width: 1px;
+} 
+
+.navbar-light .navbar-toggler:focus {
+  outline: none;
+}
+
+h1, h2 {
+  font-family: Righteous;
+}
+
+h3 a {
+  float: right;
+  padding: 3px;
+}
+
+.jumbotron {
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  /* padding: 29% 0;
+  margin-top: -10%; */
+  /* background-image: url('http://bradrumack.com/public/images/hero.jpg'); */
+  background-image: url('./images/cityscape-1-BW.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.headline {
+  height: 100%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  text-align: right;
+}
+
+.headline h1 {
+  font-size: 4.8rem;
+  margin-bottom: 0;
+}
+
+.headline p {
+  font-size: 2rem;
+}
+
+.stack {
+  text-align: center;
+  font-size: 3rem;
+  padding: 20px 20px;
+}
+
+.stack img {
+  padding-bottom: 12px;
+}
+
+.fa-html5 {
+  color: #F15931;
+}
+
+.fa-css3-alt {
+  color: #007DC6;
+}
+
+.fa-js {
+  color: #F58233;
+}
+
+.fa-react {
+  color: #60DBFB;
+}
+
+.fa-node {
+  color: #8FC53F;
+}
+
+.fa-npm {
+  color: #cb3837;
+}
+
+.fa-python {
+  color: #FFE873;
+}
+
+.fa-database {
+  color: #00758F;
+}
+
+.fa-git {
+  color: #F05033;
+}
+
+.fa-info-circle {
+  color: black;
+}
+
+.fa-github-square {
+  color: #000;
+}
+
+.projects {
+  height: 600px;
+}
+
+.card-container {
+  height: 100%;
+}
+
+.card-row {
+  height: 100%;
+  width: 100%;
+  margin: 0 50px;
+  border: 10px solid black;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card-row:hover {
+  background-color: #EEE;
+}
+
+.project-card {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.5rem;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  transition: transform .4s, width .25s, height .25s, 
+  left .25s;
+}
+
+.projects-mobile .card {
+  border: none;
+}
+
+.projects-mobile h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.projects-mobile h3 {
+  font-family: Righteous;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.project-card-mobile {
+  display: block;
+  margin: 10px auto;
+  font-size: 0.5rem;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  transition: transform .25s, width .25s, height .25s, left .25s;
+  z-index: 1;
+}
+
+.project-card-mobile .description {
+  font-family: Roboto;
+  font-size: .7rem;
+  padding: 20px;
+}
+
+.project-card-mobile .description {
+  font-family: Roboto;
+  font-size: .7rem;
+  padding: 20px;
+}
+
+.project-card:hover {
+  background-color: #111;
+}
+
+.project-card h1 {
+  padding: 10px;
+  text-align: left;
+  transition: font-size .25s;
+}
+
+.project-card h6 {
+  font-size: .8rem;
+  text-align: left;
+  padding: 15%;
+  opacity: 0;
+}
+
+.project-card p, .project-card-mobile p {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+
+.project-card .description {
+  font-family: Roboto
+}
+
+.project-card i, .project-card-mobile i {
+  color: #FFF;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.project-card i:hover {
+  color: #AAA;
+}
+
+.contract {
+  height: 300px;
+  width: 200px;
+}
+
+.contract h1 {
+  font-size: 1.5rem;
+}
+
+.contract p {
+  font-size: 0.5rem;
+}
+
+.expand {
+  height: 450px;
+  width: 300px;
+  transform: rotate(0deg) !important;
+  z-index: 100 !important;
+  top: 7% !important;
+  margin: 0 !important;
+}
+
+.expand h1 {
+  font-size: 2.25rem;
+}
+
+.expand p {
+  font-size: 0.75rem;
+}
+
+#projects {
+  padding: 3% 0;
+}
+
+.projects-title-row {
+  height: 100%;
+  text-align: center;
+}
+
+.projects-title-row h1,
+.projects-title-row p {
+  margin-bottom: 0
+}
+
+.projects-title-row p {
+  font-size: .8rem;
+}
+
+.projects-mobile .container {
+  border: 10px solid black;
+  border-radius: 20px;
+}
+
+.bio {
+  padding: 3% 0;
+  background-color:rgba(0,0,0,0.2)
+}
+
+.bio .card {
+  margin: 10px;
+}
+
+.bio h3 {
+  font-size: 2.5rem;
+  font-family: Righteous;
+  margin: 0;
+}
+
+.bio h4 {
+  font-family: Righteous;
+  margin: 0;
+}
+
+.bio h5 {
+  margin: 0;
+}
+
+.bio p {
+  font-size: .8rem;
+}
+
+.bio h5 + p {
+  font-size: .75rem;
+}
+
+.bio hr {
+  margin: .6rem 0;
+}
+
+.bio .card-text {
+  font-size: .9rem;
+}
+
+.bio img {
+  height: 3rem;
+  width: auto;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  float: right;
+}
+
+#fcc {
+  background-color: #006400;
+}
+
+.list-group-item {
+  border: none;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0,0,0,1)
+}
+
+footer h1 {
+  margin: 0;
+}
+
+i {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.project-card .show {
+  opacity: 1;
+  transition: opacity .5s .25s;
+}
+
