@@ -26,9 +26,13 @@ nav {
   border-color: #000;
   border-width: 1px;
 } 
-
+x
 .navbar-light .navbar-toggler:focus {
   outline: none;
+}
+
+.nav-item {
+  color: rgba(0,0,0,.9);
 }
 
 h1, h2 {
