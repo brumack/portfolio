@@ -303,6 +303,7 @@ h3 a {
   font-size: 2.5rem;
   font-family: Righteous;
   margin: 0;
+  text-align: center;
 }
 
 .bio h4 {
@@ -362,5 +363,9 @@ i {
 .project-card .show {
   opacity: 1;
   transition: opacity .5s .25s;
+}
+
+.contact {
+  text-align: center;
 }
 
