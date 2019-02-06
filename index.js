@@ -30,7 +30,7 @@ function randomPosition() {
   return {
     randAngle: Math.floor(Math.random() * 100) - 50,
     randX: Math.floor(Math.random() * 75),
-    randMargin: Math.floor(Math.random() * 20) - 15
+    randMargin: Math.floor(Math.random() * 15) - 10
   }
 }
 
